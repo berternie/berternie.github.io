@@ -1,13 +1,19 @@
 <!-- Toolbar -->
 <div class="content" role="main">
   
-  <app-side-panel></app-side-panel>
-  <router-outlet></router-outlet>
-  <!-- Footer -->
-  <footer>
-      berternie?&nbsp;
-  </footer>
-
+  <div class="side-pannel">
+    <img class="logo" src={{logo}}>
+    <nav class="menu-buttons">
+      <a class="menu-button" routerLink="/home">Home</a>
+      <a class="menu-button" routerLink="/projects">Projects</a>
+      <a class="menu-button" routerLink="/about">About</a>
+    </nav>
+    <footer>
+      contact@berternie.co&nbsp;
+    </footer>
+  </div>
+  <div class="page">
+    <router-outlet></router-outlet>
+  </div>
+  
 </div>
-
-<router-outlet></router-outlet>
